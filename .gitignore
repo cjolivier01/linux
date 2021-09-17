@@ -71,7 +71,7 @@ modules.order
 #
 /*.spec
 
-#
+browse.vsc.db#
 # Debian directory (make deb-pkg)
 #
 #/debian/
@@ -156,3 +156,6 @@ x509.genkey
 
 # Documentation toolchain
 sphinx_*/
+
+# vscode
+/browse.vsc.db*
