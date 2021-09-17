@@ -1,0 +1,5 @@
+#!/bin/bash
+CONCURRENCY_LEVEL=$(nproc) \
+  LANG=C \
+  fakeroot debian/rules binary-headers binary-generic
+#LANG=C fakeroot debian/rules binary-headers binary-generic binary-perarch
