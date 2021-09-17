@@ -1,5 +1,7 @@
 #!/bin/bash
 CONCURRENCY_LEVEL=$(nproc) \
   LANG=C \
+  CONFIG_HID=y \
+  CONFIG_I2C_HID=y \
   fakeroot debian/rules binary-headers binary-generic
 #LANG=C fakeroot debian/rules binary-headers binary-generic binary-perarch
